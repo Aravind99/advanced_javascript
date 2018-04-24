@@ -41,3 +41,14 @@ var foo = function bar() {
 
 foo();
 bar(); // Error! ReferenceError
+
+/* Example 4 */
+var foo;
+
+try {
+    foo.length;
+} catch(error) {
+    console.log(error); // TypeError
+}
+
+console.log(error); // ReferenceError
